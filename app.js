@@ -26,7 +26,7 @@ app.use('/posts',postRouter)
 const dirname = path.resolve()
 app.use(express.static(path.join(dirname,'uploads')))
 
-const port = process.env.PORT ||3000
+const port = process.env.PORT ||3001
 app.listen(port,()=>{
     console.log(`listening on port ${port}`);
 })

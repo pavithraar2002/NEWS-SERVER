@@ -12,7 +12,7 @@ const addPost =async (req,res)=>{
         }
         var post = new Post(postItem)
         await post.save(); 
-        post.imageurl = `http://localhost:3000/uploads/${post.id}`
+        post.imageurl = `http://localhost:3001/uploads/${post.id}`
         
         res.status(200).json(postItem)       
 
